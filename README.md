@@ -9,37 +9,37 @@ This is a grab-bag of [Robert Penner's easing equations](http://www.robertpenner
 Full list of eases:
 
 ```js
-import { backInOut } from './back-in-out';
-import { backIn } from './back-in';
-import { backOut } from './back-out';
-import { bounceInOut } from './bounce-in-out';
-import { bounceIn } from './bounce-in';
-import { bounceOut } from './bounce-out';
-import { circInOut } from './circ-in-out';
-import { circIn } from './circ-in';
-import { circOut } from './circ-out';
-import { cubicInOut } from './cubic-in-out';
-import { cubicIn } from './cubic-in';
-import { cubicOut } from './cubic-out';
-import { elasticInOut } from './elastic-in-out';
-import { elasticIn } from './elastic-in';
-import { elasticOut } from './elastic-out';
-import { expoInOut } from './expo-in-out';
-import { expoIn } from './expo-in';
-import { expoOut } from './expo-out';
-import { linear } from './linear';
-import { quadInOut } from './quad-in-out';
-import { quadIn } from './quad-in';
-import { quadOut } from './quad-out';
-import { quartInOut } from './quart-in-out';
-import { quartIn } from './quart-in';
-import { quartOut } from './quart-out';
-import { quintInOut } from './quint-in-out';
-import { quintIn } from './quint-in';
-import { quintOut } from './quint-out';
-import { sineInOut } from './sine-in-out';
-import { sineIn } from './sine-in';
-import { sineOut } from './sine-out';
+import { backInOut } from '@gamestdio/easing';
+import { backIn } from '@gamestdio/easing';
+import { backOut } from '@gamestdio/easing';
+import { bounceInOut } from '@gamestdio/easing';
+import { bounceIn } from '@gamestdio/easing';
+import { bounceOut } from '@gamestdio/easing';
+import { circInOut } from '@gamestdio/easing';
+import { circIn } from '@gamestdio/easing';
+import { circOut } from '@gamestdio/easing';
+import { cubicInOut } from '@gamestdio/easing';
+import { cubicIn } from '@gamestdio/easing';
+import { cubicOut } from '@gamestdio/easing';
+import { elasticInOut } from '@gamestdio/easing';
+import { elasticIn } from '@gamestdio/easing';
+import { elasticOut } from '@gamestdio/easing';
+import { expoInOut } from '@gamestdio/easing';
+import { expoIn } from '@gamestdio/easing';
+import { expoOut } from '@gamestdio/easing';
+import { linear } from '@gamestdio/easing';
+import { quadInOut } from '@gamestdio/easing';
+import { quadIn } from '@gamestdio/easing';
+import { quadOut } from '@gamestdio/easing';
+import { quartInOut } from '@gamestdio/easing';
+import { quartIn } from '@gamestdio/easing';
+import { quartOut } from '@gamestdio/easing';
+import { quintInOut } from '@gamestdio/easing';
+import { quintIn } from '@gamestdio/easing';
+import { quintOut } from '@gamestdio/easing';
+import { sineInOut } from '@gamestdio/easing';
+import { sineIn } from '@gamestdio/easing';
+import { sineOut } from '@gamestdio/easing';
 ```
 
 All easing functions only remap a time value, and all have the same signature.

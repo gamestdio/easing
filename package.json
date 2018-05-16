@@ -1,0 +1,51 @@
+{
+  "name": "@gamestdio/easing",
+  "version": "1.0.0",
+  "description": "Collection of easing equations for JavaScript / TypeScript",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "license": "MIT",
+  "author": "Matt DesLauriers <dave.des@gmail.com>",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/mocha": "^5.2.0",
+    "@types/node": "^10.1.0",
+    "mocha": "^5.1.1",
+    "tape": "~2.13.2",
+    "ts-node": "^6.0.3",
+    "typescript": "^2.8.3"
+  },
+  "scripts": {
+    "test": "mocha --require ts-node/register test/*.ts --exit",
+    "prepublish": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/gamestdio/easing.git"
+  },
+  "homepage": "https://github.com/gamestdio/easing",
+  "bugs": {
+    "url": "https://github.com/gamestdio/easing/issues"
+  },
+  "keywords": [
+    "ease",
+    "eases",
+    "robert",
+    "penner",
+    "easing",
+    "easings",
+    "linear",
+    "lerp",
+    "animation",
+    "tween",
+    "anim",
+    "animations",
+    "tweening",
+    "tweens",
+    "function",
+    "functions",
+    "expo",
+    "quint",
+    "quadratic"
+  ]
+}

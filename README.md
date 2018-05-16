@@ -6,8 +6,6 @@ This is a grab-bag of [Robert Penner's easing equations](http://www.robertpenner
 
 [![NPM](https://nodei.co/npm/@gamestdio/easing.png)](https://nodei.co/npm/@gamestdio/easing/)
 
-Each easing has its own file which can be required individually. The entry point also exports all eases with camelCase, so `require('eases/expo-in-out')` becomes `require('eases').expoInOut`.
-
 Full list of eases:
 
 ```js

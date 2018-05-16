@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@gamestdio/easing</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <script src="easing.js"></script>
+    <style>
+        body {
+            font-family: 'Raleway', Arial, Helvetica, sans-serif;
+            text-align: center;
+            padding-top: 2vh;
+        }
+        h1 {
+            font-size: 38px;
+        }
+        a { color: #0096dc; text-decoration: none; }
+        a:hover { color: #007fba; text-decoration: underline; }
+        .examples {
+            margin: 0 auto;
+            margin-top: 32px;
+            display: block;
+            width: 80vw;
+        }
+        .examples > .box {
+            display: inline-block;
+            margin: 0 12px 12px 0;
+        }
+        canvas {
+            border: 1px solid rgba(0, 0, 0, 0.5);
+        }
+    </style>
+  </head>
+  <body>
+    <h1><a href="https://github.com/gamestdio/easing">@gamestdio/easing</a></h1>
+
+    <p>Standalone easing functions for JavaScript / TypeScript.</p>
+
+    <code><pre>npm install @gamestdio/easing</pre></code>
+    <code><pre>import { backInOut } from "@gamestdio/easing";</pre></code>
+
+    <div class="examples"></div>
+
+    <script type="text/javascript">
+        var width = 300;
+        var height = 150;
+
+        window.addEventListener('load', function (e) {
+            var funcs = [ easing.backInOut, easing.backIn, easing.backOut, easing.bounceInOut, easing.bounceIn, easing.bounceOut, easing.circInOut, easing.circIn, easing.circOut, easing.cubicInOut, easing.cubicIn, easing.cubicOut, easing.elasticInOut, easing.elasticIn, easing.elasticOut, easing.expoInOut, easing.expoIn, easing.expoOut, easing.linear, easing.quadInOut, easing.quadIn, easing.quadOut, easing.quartInOut, easing.quartIn, easing.quartOut, easing.quintInOut, easing.quintIn, easing.quintOut, easing.sineInOut, easing.sineIn, easing.sineOut ];
+            var container = document.querySelector(".examples");
+
+            for (var f of funcs) {
+                var box = document.createElement('div')
+                box.className = 'box'
+                var title = document.createElement('h2')
+                title.innerHTML = f.name
+                var canvas = document.createElement('canvas')
+                canvas.width = width;
+                canvas.height = height;
+                drawFunction(canvas, f);
+                box.appendChild(title);
+                box.appendChild(canvas);
+                container.appendChild(box);
+            }
+        });
+
+        function drawFunction(canvas, f) {
+            function canvasCoord(x, y) {
+                return [width * x, height * (1 - y)]
+            }
+
+            var ctx = canvas.getContext('2d');
+            ctx.beginPath();
+            for (let x = 0; x <= 1; x += 0.01) {
+                var y = f(x)
+                var coords = canvasCoord(x, y);
+                ctx.lineTo(coords[0], coords[1]);
+            }
+            ctx.stroke();
+        }
+    </script>
+
+    <p><a href="https://github.com/gamestdio/easing">@gamestdio/easing</a></p>
+  </body>
+</html>

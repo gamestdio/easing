@@ -10,6 +10,7 @@
   "devDependencies": {
     "@types/mocha": "^5.2.0",
     "@types/node": "^10.1.0",
+    "browserify": "^16.2.2",
     "mocha": "^5.1.1",
     "tape": "~2.13.2",
     "ts-node": "^6.0.3",
@@ -17,6 +18,7 @@
   },
   "scripts": {
     "test": "mocha --require ts-node/register test/*.ts --exit",
+    "bundle": "browserify -s easing lib/index.js > easing.js",
     "prepublish": "tsc"
   },
   "repository": {
